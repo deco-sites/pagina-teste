@@ -1,52 +1,21 @@
-/**
-interface Props {
-  /**
-  * @description The description of name.
-  
-  name?: string;
-}
-
-export default function Section({ name = "Capy" }: Props) {
-  return <div>Hello {name}</div>
-}
-
-*/
-
-import React from 'react';
-
 interface NavItem {
   label: string;
-  url: string;
+  href: string;
+  isActive?: boolean; // Optional property for active link styling
 }
 
-const DEFAULT_NAV_ITEMS: NavItem[] = [
-  { label: 'Home', url: '#' },
-  { label: 'News', url: '#' },
-  { label: 'Contact', url: '#' },
-];
-
-const Navigation: React.FC<{ items?: NavItem[]; activeLabel?: string }> = ({
-  items = DEFAULT_NAV_ITEMS,
-  activeLabel,
-}) => {
+const Navigation = ({ item }: { item: NavItem }) => {
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-4 py-4 bg-gray-800">
-      <div className="flex items-center">
-        <h2 className="text-3xl font-bold text-white">Scroll Down</h2>
-        <p className="ml-4 text-gray-400">Scroll down to see the sticky effect.</p>
-      </div>
-      <ul className="hidden md:flex space-x-4">
-        {items.map((item) => (
-          <li key={item.label} className="text-white hover:bg-gray-700">
-            <a
-              href={item.url}
-              className={`px-3 py-2 rounded-full text-sm font-medium ${activeLabel === item.label ? 'bg-blue-500' : ''
-                }`}
-            >
-              {item.label}
-            </a>
-          </li>
-        ))}
+    <nav className="flex items-center justify-between w-full px-4 py-4 bg-gray-800 fixed top-0 left-0 z-50">
+      <ul className="flex space-x-4">
+        <li key={item.label}>
+          <Link
+            href={item.href}
+            className={`px-4 py-2 rounded text-white hover:bg-gray-700 ${item.isActive ? 'bg-blue-500 text-white' : ''}`}
+          >
+            {item.label}
+          </Link>
+        </li>
       </ul>
     </nav>
   );
