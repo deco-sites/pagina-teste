@@ -867,7 +867,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 29.590385087073827,
+                "width": 33.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -888,7 +888,7 @@
               },
               {
                 "type": "stack",
-                "width": 50.19797470128596,
+                "width": 46.56084656084655,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -909,7 +909,7 @@
               },
               {
                 "type": "stack",
-                "width": 20.211640211640212,
+                "width": 20.105820105820104,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -968,7 +968,8 @@
           "viewId": "Properties",
           "id": "%2F.deco%2Fblocks%2FPreview%2520%252Fsections%252FHeader.tsx.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         }
       }

@@ -3,5 +3,14 @@
   "navigation": {
     "links": [],
     "buttons": []
-  }
+  },
+  "items": [
+    {
+      "label": "Inicio",
+      "url": "#inicio",
+      "hoverBackgroundColor": "blue",
+      "hoverTextColor": "yellow"
+    }
+  ],
+  "hoverBackgroundColor": "blue"
 }

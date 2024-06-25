@@ -20,7 +20,6 @@ export interface Nav {
       label?: string;
       url?: string;
     }[];
-    buttons: CTA[];
   };
 }
 
@@ -45,10 +44,10 @@ export interface Nav {
 // Definindo itens de navegação padrão
 const DEFAULT_NAV_ITEMS: NavItem[] = [
   { label: 'Início', url: '/' },
-  { label: 'Quem Somos', url: '/quem-somos' },
-  { label: 'Contato', url: '/contato' },
-  { label: 'Preços', url: '/precos' },
-  { label: 'Por Que Migrar?', url: '/por-que-migrar' },
+  { label: 'Quem Somos', url: '#quem-somos' },
+  { label: 'Contato', url: '#contato' },
+  { label: 'Preços', url: '#precos' },
+  { label: 'Por Que Migrar?', url: '#por-que-migrar' },
 ];
 
 // Exportando o componente
