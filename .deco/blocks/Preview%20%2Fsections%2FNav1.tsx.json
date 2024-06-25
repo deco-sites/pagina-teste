@@ -1,3 +1,16 @@
 {
-  "__resolveType": "site/sections/Nav1.tsx"
+  "__resolveType": "site/sections/Nav1.tsx",
+  "item": {
+    "label": "inicio",
+    "href": "#inicio",
+    "isActive": true
+  },
+  "items": [
+    {
+      "label": "Inicio",
+      "href": "#inicio",
+      "isActive": false
+    },
+    {}
+  ]
 }
