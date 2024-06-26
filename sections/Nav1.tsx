@@ -15,7 +15,7 @@ const NavigationBar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 flex items-center justify-center mx-auto w-full px-4 py-4 bg-indigo-500 ${window.scrollY > 0 ? '@apply sticky' : ''
+      className={`fixed top - 0 flex w - full flex - wrap items - center mx-auto w-full px-4 py-4 text-yellow bg-indigo-700 ${window.scrollY > 0 ? '@apply sticky' : ''
         }`}
     >
       <ul className="flex space-x-4">
@@ -23,7 +23,7 @@ const NavigationBar = () => {
           <li key={item.label}>
             <a
               href={item.href}
-              className={`px-4 py-2 text-white hover:bg-indigo-200 hover:text-yellow-200 ${index === navigationItems.length - 1 ? '' : 'border-r-2 border-white'
+              className={`px-4 py-2 text-white hover:bg-blue-200 hover:text-yellow-200 ${index === navigationItems.length - 1 ? '' : 'border-r-2 border-white'
                 }`}
             >
               {item.label}
@@ -36,3 +36,4 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
