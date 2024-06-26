@@ -3,10 +3,7 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
-    },
-    {
-      "__resolveType": "Header"
+      "__resolveType": "Preview /sections/Nav1.tsx"
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
