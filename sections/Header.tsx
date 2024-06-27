@@ -2,53 +2,14 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 
-  // Definindo as interfaces necessárias
-  interface NavItem {
-    label: string;
-    url: string;
-    hoverBackgroundColor?: string;
-    hoverTextColor?: string;
-  }
+const Rectangle2 = () => (
+  <div className="rectangle_2 flex-shrink-0 w-[17.5625rem] h-[3.125rem] rounded-[1.1875rem] border border-[#0085ff] bg-[#0c1126]" />
+);
 
-export interface Nav {
-  logo?: {
-    src?: ImageWidget;
-    alt?: string;
-  };
-  navigation?: {
-    links: {
-      label?: string;
-      url?: string;
-    }[];
-  };
-}
+export default Rectangle2;
 
-  // Componente Navigation
-  const Navigation = ({ items, ...props }: { items: NavItem[]; hoverBackgroundColor?: string; hoverTextColor?: string }) => {
-    return (
-      <nav className="flex items-center justify-between w-full px-4 py-4 bg-transparent">
-        {items.map((item) => (
-          <Link
-            key={item.label}
-            to={item.url}
-            className={`flex items-center px-4 py-2 hover:bg-${props.hoverBackgroundColor || 'gray-200'} hover:text-${props.hoverTextColor || 'yellow-500'}`}
-          >
-            {item.label}
-          </Link>
-        ))}
-      </nav>
-    );
-  };
+const InicioQuemSomosContatoPrecosPorQueMigrar = () => (
+  <div className="inicio___quem_somos___contato___pre_os___por_que_migrar_ flex-shrink-0 w-[783px] h-[1.5625rem] text-white font-['Inter'] text-xl font-bold leading-[normal]">INICIO | QUEM SOMOS | CONTATO | PREÇOS | POR QUE MIGRAR?</div>
+);
 
-
-// Definindo itens de navegação padrão
-const DEFAULT_NAV_ITEMS: NavItem[] = [
-  { label: 'Início', url: '/' },
-  { label: 'Quem Somos', url: '#quem-somos' },
-  { label: 'Contato', url: '#contato' },
-  { label: 'Preços', url: '#precos' },
-  { label: 'Por Que Migrar?', url: '#por-que-migrar' },
-];
-
-// Exportando o componente
-export default Navigation;
+export default InicioQuemSomosContatoPrecosPorQueMigrar;
