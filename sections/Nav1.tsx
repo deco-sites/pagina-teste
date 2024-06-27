@@ -8,14 +8,16 @@ interface NavItem {
 const NavigationBar = () => {
   const navigationItems: NavItem[] = [
     { label: 'INICIO', href: '#inicio' },
-    { label: 'QUEM SOMOS', href: 'quemsomos' },
-    { label: 'QUERO MIGRAR', href: 'queromigrar' },
-    { label: 'CONTATO!', href: 'contato' },
+    { label: 'QUEM SOMOS', href: '#quemsomos' },
+    { label: 'CONTATO', href: '#contato' },
+    { label: 'PREÇO', href: '#preco' },        
+    { label: 'PORQUE MIGRAR?', href: '#porquemigrar' },
+  
   ];
 
   return (
     <nav
-      className={`fixed top - 0 flex w - full flex - wrap items - center mx-auto w-full px-4 py-4 text-yellow bg-indigo-700 ${window.scrollY > 0 ? '@apply sticky' : ''
+      className={`fixed top - 0 flex w - full flex - wrap items - center mx-auto w-full px-4 py-4 text-white bg-[#050B1D]/[.79] ${window.scrollY > 0 ? '@apply sticky' : ''
         }`}
     >
       <ul className="flex space-x-4">
@@ -23,7 +25,7 @@ const NavigationBar = () => {
           <li key={item.label}>
             <a
               href={item.href}
-              className={`px-4 py-2 text-white hover:bg-blue-200 hover:text-yellow-200 ${index === navigationItems.length - 1 ? '' : 'border-r-2 border-white'
+              className={`px-4 py-2 flex-shrink-0 w-[783px] h-[1.5625rem] text-white font-['Inter'] text-xl font-bold leading-[normal] hover:text-blue ${index === navigationItems.length - 1 ? '' : 'border-r-2 border-white'
                 }`}
             >
               {item.label}
@@ -36,11 +38,3 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
-
-import React from 'react';
-
-const InicioQuemSomosContatoPrecosPorQueMigrar = () => (
-<div className="inicio flex-shrink-0 w-[783px] h-[1.5625rem] text-white font-['Inter'] text-xl font-bold leading-[normal]">INICIO | QUEM SOMOS | CONTATO | PREÇOS | POR QUE MIGRAR?</div>
-);
-
-export default InicioQuemSomosContatoPrecosPorQueMigrar;
