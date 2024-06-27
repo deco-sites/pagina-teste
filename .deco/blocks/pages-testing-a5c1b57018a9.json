@@ -11,9 +11,6 @@
       "items": []
     },
     {
-      "__resolveType": "Preview /sections/Nav1.tsx"
-    },
-    {
       "__resolveType": "site/sections/Hero.tsx",
       "title": "<p>Modifique este texto</p>",
       "cta": [],
