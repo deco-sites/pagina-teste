@@ -25,26 +25,6 @@
       "name": "Pages",
       "pinned": true,
       "icon": "files",
-      "layout": [],
-      "tabs": {
-        "pages::List::list::List::%7B%7D": {
-          "name": "List",
-          "icon": "list",
-          "render": "function",
-          "viewId": "List",
-          "id": "pages::List::list::List::%7B%7D",
-          "state": {
-            "__signal": null
-          }
-        }
-      },
-      "category": "Content"
-    },
-    {
-      "id": "sections",
-      "name": "Sections",
-      "pinned": true,
-      "icon": "block",
       "layout": {
         "settings": {
           "hasHeaders": true,
@@ -91,12 +71,12 @@
                 "activeItemIndex": 0,
                 "content": [
                   {
-                    "id": "sections::List::list::List::%7B%7D",
-                    "title": "<div class=\"contents text-base-700\" id=\"header-sections::List::list::List::%7B%7D\" />",
+                    "id": "pages::List::list::List::%7B%7D",
+                    "title": "<div class=\"contents text-base-700\" id=\"header-pages::List::list::List::%7B%7D\" />",
                     "type": "component",
                     "componentName": "component",
                     "componentState": {
-                      "id": "sections::List::list::List::%7B%7D"
+                      "id": "pages::List::list::List::%7B%7D"
                     },
                     "isClosable": true,
                     "reorderEnabled": true
@@ -112,6 +92,26 @@
         "openPopouts": [],
         "maximisedItemId": null
       },
+      "tabs": {
+        "pages::List::list::List::%7B%7D": {
+          "name": "List",
+          "icon": "list",
+          "render": "function",
+          "viewId": "List",
+          "id": "pages::List::list::List::%7B%7D",
+          "state": {
+            "__signal": null
+          }
+        }
+      },
+      "category": "Content"
+    },
+    {
+      "id": "sections",
+      "name": "Sections",
+      "pinned": true,
+      "icon": "block",
+      "layout": [],
       "tabs": {
         "sections::List::list::List::%7B%7D": {
           "name": "List",
@@ -511,7 +511,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 30,
+                "width": 41.66666666666667,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -533,7 +533,7 @@
               },
               {
                 "type": "stack",
-                "width": 70,
+                "width": 58.333333333333336,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -572,8 +572,7 @@
           "width": 30,
           "id": "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Properties::list::Properties::%7B%7D",
           "state": {
-            "__signal": null,
-            "value": null
+            "__signal": null
           }
         },
         "%2F.deco%2Fblocks%2Fpages-testing-a5c1b57018a9.json::Preview::world::Preview::%7B%7D": {
@@ -933,7 +932,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 36.8131868131868,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -955,7 +954,7 @@
               },
               {
                 "type": "stack",
-                "width": 63.18681318681317,
+                "width": 50,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
