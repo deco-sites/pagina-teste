@@ -8,7 +8,7 @@ const Rectangle2 = () => (
 
 /**  <div className="rectangle_2 flex-shrink-0 w-[783px] h-[1.5625rem] text-white font-['Inter'] text-xl font-bold leading-[normal] rounded-[1.1875rem] border border-[#0085ff] bg-[#050B1D]">
 */
-  <div className="rectangle_2 flex-shrink-0 text-white font-['Inter'] text-xl font-bold leading-[normal] rounded-[1.1875rem] border border-[#0085ff] bg-[#050B1D]">
+  <div className="rectangle_2 flex-shrink-0 text-white font-['Inter'] text-xl font-bold leading-[normal] rounded-[1.1875rem] border border-[#0085ff] bg-[#050B1D] display:flex justify-content:center">
   <Nav1 />
     <p>Um texto para preenchimento</p> {/* Add a paragraph */}
     <br /> {/* Add a line break */}
