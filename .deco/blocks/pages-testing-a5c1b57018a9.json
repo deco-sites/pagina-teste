@@ -3,7 +3,12 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "site/sections/Header.tsx",
+      "navigation": {
+        "links": [],
+        "buttons": []
+      },
+      "items": []
     },
     {
       "__resolveType": "Preview /sections/Nav1.tsx"
