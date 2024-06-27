@@ -3,6 +3,9 @@
   "path": "/",
   "sections": [
     {
+      "__resolveType": "Header"
+    },
+    {
       "__resolveType": "Preview /sections/Nav1.tsx"
     },
     {

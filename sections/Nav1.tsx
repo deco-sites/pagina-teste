@@ -37,3 +37,10 @@ const NavigationBar = () => {
 
 export default NavigationBar;
 
+import React from 'react';
+
+const InicioQuemSomosContatoPrecosPorQueMigrar = () => (
+<div className="inicio flex-shrink-0 w-[783px] h-[1.5625rem] text-white font-['Inter'] text-xl font-bold leading-[normal]">INICIO | QUEM SOMOS | CONTATO | PREÇOS | POR QUE MIGRAR?</div>
+);
+
+export default InicioQuemSomosContatoPrecosPorQueMigrar;
