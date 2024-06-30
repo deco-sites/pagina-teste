@@ -5,12 +5,12 @@ import Nav1 from './Nav1.tsx';
 
 const Rectangle2 = () => (
   <div className="rectangle_2 flex w-[1520px] h-[280px] text-white font-['Inter'] text-xl font-bold leading-[normal] rounded-[1.1875rem] border border-[#0093ff] bg-[#050B1D]">
-    <div class="elementos_header flex flex-col items-center justify-center h-screen">
+    <div class="elementos_header flex flex-col items-center justify-center h-full">
       <div class="item border-secondary rounded-lg overflow-hidden">
-      <img src="imagem.jpg" alt="Imagem" class="w-full md:w-1/2 mb-8"/>
+        <img src="imagem.png" alt="Imagem" class="w-48 h-48 rounded-full mb-8">
       </div>
       <div class="item border-secondary rounded-lg overflow-hidden">
-        <Nav1 class="flex flex-row gap-4"/>
+        <Nav1 class="flex gap-8"/>
       </div>
       <div class="item border-secondary rounded-lg overflow-hidden">
         <div class="flex flex-row gap-4 mt-8">
