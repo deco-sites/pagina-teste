@@ -3,8 +3,8 @@ import Image from "apps/website/components/Image.tsx";
 import Icon from "../components/ui/Icon.tsx";
 import Nav1 from './Nav1.tsx'; 
 
-const Rectangle2 = () => (
-  <div className="rectangle_2 flex w-[1520px] h-[280px] text-white font-['Inter'] text-xl font-bold leading-[normal] rounded-[1.1875rem] border border-[#0093ff] bg-[#050B1D]">
+const Rectangle3 = () => (
+  <div className="rect2 flex w-[1520px] h-[280px] text-white font-['Inter'] text-xl font-bold leading-[normal] rounded-[1.1875rem] border border-[#0093ff] bg-[#050B1D]">
     <div class="elementos_header flex flex-col items-center justify-center h-full">
       <div class="item border-secondary rounded-lg overflow-hidden">
         <img src="imagem.png" alt="Imagem" class="w-48 h-48 rounded-full mb-8">
@@ -22,4 +22,4 @@ const Rectangle2 = () => (
   </div>
   );
 
-export default Rectangle2;
+export default Rectangle3;
